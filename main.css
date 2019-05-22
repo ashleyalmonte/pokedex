@@ -30,17 +30,37 @@ background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_res
   padding-top: 60px;
 }
 
-@keyframes fade-in {
-  from {opacity: 0;}
-  to {opacity: 1;}
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  height: 40px;
+
 }
 
-.show{
-animation: fade-in 0.5s;
-opacity: 1;
-}
-
-.hidden{
-  opacity: 0;
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
 
 }
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style each tab content individually */
+#Pikachu {background-color:red;}
+#Jigglypuff {background-color:green;}
+#kangaskhan {background-color:blue;}
