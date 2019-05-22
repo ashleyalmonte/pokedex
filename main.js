@@ -14,10 +14,26 @@ requestAPI = () => {
         }
     };
     xhttp.open("GET", " https://fizal.me/pokeapi/api/v2/name/pikachu.json", true);
-    xhttp.open("GET", " https://fizal.me/pokeapi/api/v2/name/jigglypuff.json", true);
-    xhttp.open("GET", " https://fizal.me/pokeapi/api/v2/name/kangaskhan.json", true);
-    xhttp.send();
 }
+requestAPI = () => {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            let data = JSON.parse(this.responseText)
+            user = {
+                name: data['name'],
+                speacial_attack: data["stats"][4]["base_stat"],
+                hp: data["stats"][5]["base_stat"],
+                defense:data["stats"][1]["base_stat"],
+                ability:data["abilities"][2]["ability"]["name"]
+              }
+              }
+            };
+xhttp.open("GET", " https://fizal.me/pokeapi/api/v2/name/jigglypuff.json", true)
+
+}
+
+
 
 requestAPI()
 ,
@@ -69,3 +85,4 @@ function openCity(cityName, elmnt, color) {
 
 
 document.getElementById("defaultOpen").click();
+}
