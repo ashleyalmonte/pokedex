@@ -46,13 +46,11 @@ background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_res
 
 }
 
-/* Change background color of buttons on hover */
 .tablink:hover {
   background-color: #777;
 
 }
 
-/* Set default styles for tab content */
 .tabcontent {
   color: white;
   display: none;
@@ -60,7 +58,6 @@ background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_res
   text-align: center;
 }
 
-/* Style each tab content individually */
 #Pikachu {background-color:red;}
 #Jigglypuff {background-color:green;}
 #kangaskhan {background-color:blue;}
