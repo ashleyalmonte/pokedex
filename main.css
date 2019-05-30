@@ -35,7 +35,41 @@ font-style:
   padding-top: 60px;
 }
 
+<<<<<<< HEAD
   .Pokemon {
   image: 100px;
   font-style: red;
 }
+=======
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  height: 40px;
+
+}
+
+.tablink:hover {
+  background-color: #777;
+
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Pikachu {background-color:red;}
+#Jigglypuff {background-color:green;}
+#kangaskhan {background-color:blue;}
+>>>>>>> 4a5f0d88db4059d9698decf109e2790251841883
